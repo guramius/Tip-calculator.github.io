@@ -27,69 +27,69 @@ button_5.addEventListener('click', () => {
     };
 });
 
-// button_10.addEventListener('click', () => {
-//     let personAmount = document.getElementById('personAmount');
-//     let bills = document.getElementById("inputBillNumber");
-//     let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
+button_10.addEventListener('click', () => {
+    let personAmount = document.getElementById('personAmount');
+    let bills = document.getElementById("inputBillNumber");
+    let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
 
-//     if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
-//         error.innerHTML = "Can’t be zero"
-//         numberOfPeopleInput.style.border = "thick solid #E17052";
-//     } else {
-//         personAmount.innerHTML = "$" + (bills.value * 10/100) / numberOfPeopleInput.value;
-//         numberOfPeopleInput.style.border = "none";
-//         totalAmount.innerText = "$" + (bills.value * 10/100);
-//         error.innerHTML = "";
-//     };
-// });
+    if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
+        error.innerHTML = "Can’t be zero"
+        numberOfPeopleInput.style.border = "thick solid #E17052";
+    } else {
+        personAmount.innerHTML = "$" + (bills.value * 10/100) / numberOfPeopleInput.value;
+        numberOfPeopleInput.style.border = "none";
+        totalAmount.innerText = "$" + (bills.value * 10/100);
+        error.innerHTML = "";
+    };
+});
 
-// button_15.addEventListener('click', () => {
-//     let personAmount = document.getElementById('personAmount');
-//     let bills = document.getElementById("inputBillNumber");
-//     let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
+button_15.addEventListener('click', () => {
+    let personAmount = document.getElementById('personAmount');
+    let bills = document.getElementById("inputBillNumber");
+    let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
 
-//     if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
-//         error.innerHTML = "Can’t be zero"
-//         numberOfPeopleInput.style.border = "thick solid #E17052";
-//     } else {
-//         personAmount.innerHTML = "$" + (bills.value * 15/100) / numberOfPeopleInput.value;
-//         numberOfPeopleInput.style.border = "none";
-//         totalAmount.innerText = "$" + (bills.value * 15/100);
-//         error.innerHTML = "";
-//     };
-// });
+    if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
+        error.innerHTML = "Can’t be zero"
+        numberOfPeopleInput.style.border = "thick solid #E17052";
+    } else {
+        personAmount.innerHTML = "$" + (bills.value * 15/100) / numberOfPeopleInput.value;
+        numberOfPeopleInput.style.border = "none";
+        totalAmount.innerText = "$" + (bills.value * 15/100);
+        error.innerHTML = "";
+    };
+});
 
-// button_25.addEventListener('click', () => {
-//     let personAmount = document.getElementById('personAmount');
-//     let bills = document.getElementById("inputBillNumber");
-//     let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
+button_25.addEventListener('click', () => {
+    let personAmount = document.getElementById('personAmount');
+    let bills = document.getElementById("inputBillNumber");
+    let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
 
-//     if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
-//         error.innerHTML = "Can’t be zero"
-//         numberOfPeopleInput.style.border = "thick solid #E17052";
-//     } else {
-//         personAmount.innerHTML = "$" + (bills.value * 25/100) / numberOfPeopleInput.value;
-//         numberOfPeopleInput.style.border = "none";
-//         totalAmount.innerText = "$" + (bills.value * 25/100);
-//         error.innerHTML = "";
-//     };
-// });
+    if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
+        error.innerHTML = "Can’t be zero"
+        numberOfPeopleInput.style.border = "thick solid #E17052";
+    } else {
+        personAmount.innerHTML = "$" + (bills.value * 25/100) / numberOfPeopleInput.value;
+        numberOfPeopleInput.style.border = "none";
+        totalAmount.innerText = "$" + (bills.value * 25/100);
+        error.innerHTML = "";
+    };
+});
 
-// button_50.addEventListener('click', () => {
-//     let personAmount = document.getElementById('personAmount');
-//     let bills = document.getElementById("inputBillNumber");
-//     let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
+button_50.addEventListener('click', () => {
+    let personAmount = document.getElementById('personAmount');
+    let bills = document.getElementById("inputBillNumber");
+    let numberOfPeopleInput = document.getElementById('numberOfPeopleInput');
 
-//     if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
-//         error.innerHTML = "Can’t be zero"
-//         numberOfPeopleInput.style.border = "thick solid #E17052";
-//     } else {
-//         personAmount.innerHTML = "$" + (bills.value * 50/100) / numberOfPeopleInput.value;
-//         numberOfPeopleInput.style.border = "none";
-//         totalAmount.innerText = "$" + (bills.value * 50/100);
-//         error.innerHTML = "";
-//     };
-// });
+    if (numberOfPeopleInput.value === '' || numberOfPeopleInput.value <= 0) {
+        error.innerHTML = "Can’t be zero"
+        numberOfPeopleInput.style.border = "thick solid #E17052";
+    } else {
+        personAmount.innerHTML = "$" + (bills.value * 50/100) / numberOfPeopleInput.value;
+        numberOfPeopleInput.style.border = "none";
+        totalAmount.innerText = "$" + (bills.value * 50/100);
+        error.innerHTML = "";
+    };
+});
 
 
 
@@ -117,7 +117,7 @@ reset.addEventListener('click', () => {
     let bills = document.getElementById("inputBillNumber");
     personAmount.innerHTML = '$0.00';
     totalAmount.innerHTML = '$0.00';
-    bills.value = "0";
-    customInput.value = "0";
-    numberOfPeopleInput.value = "0"
+    bills.value = "";
+    customInput.value = "";
+    numberOfPeopleInput.value = ""
 })
