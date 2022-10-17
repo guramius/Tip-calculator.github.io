@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #C5E4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+.mainContent {
+    background: white;
+    display: flex;
+    padding: 32px;
+    border-radius: 25px;
+}
+.leftSideContent {
+    position: relative;
+}
+.bill {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5E7A7D;
+}
+/* input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputBill {
+    margin: 6px 0 40px 0;
+    padding: 16px 6px 16px 19px;
+    height: 50px;
+    outline: none;
+    border: none;
+    width: 380px;
+    background: #F3F9FA;
+    color: #00474B;
+    text-align: right;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    border-radius: 5px;
+}
+.inputBill:hover {
+    border: 2px solid #26C2AE;
+    cursor: pointer;
+}
+.dolarSvg {
+    position: absolute;
+    top: 10.5%;
+    left: 2%;
+}
+/*  */
+.select {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5E7A7D;
+}
+.numberPeople {
+    position: relative;
+}
+.numberError {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.numberError span {
+    padding-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E17457;
+}
+.numberPeople p{
+    margin: 40px 0 6px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5E7A7D;
+}
+.numberPeopleSvg {
+    position: absolute;
+    top: 54%;
+    left: 2%;
+}
+
+/* right side */
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 0;
+}
+.button p {
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    width: 118px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00474B; 
+    transition: all ease-out 0.3s;
+}
+.button p:hover {
+    background: #9FE8DF;
+    color: #00474B;
+    cursor: pointer;
+}
+.button input {
+    text-align: right;
+    width: 118px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background: #F3F9FA;
+    padding: 6px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button input:hover {
+    border: 2px solid #26C2AE;
+}
+.greenBox {
+    padding: 40px;
+    margin-left: 48px;
+    width: 414px;
+    height: 414px;
+    background: #00474B;
+    border-radius: 15px;
+    color: white;
+}
+.amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cost p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23.7px;
+}
+.person {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 29.25px;
+    color: #7F9D9F;
+}
+.amount span {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    color: #26C2AE;
+}
+.greenBox button {
+    padding: 9px 0;
+    display: block;
+    margin: 120px auto 0 auto;
+    width: 256px;
+    outline: none;
+    background: #26C2AE;
+    border: none;
+    border-radius: 5px;
+    color: #00474B;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    transition: all ease-out 0.3s;
+}
+.greenBox button:hover {
+    background: #9FE8DF;
+}
+.personalAmountClass {
+    text-align: right;
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: 1000px;
+    }
+    .mainContent {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .inputBill {
+        width: 345px;
+    }
+    .button {
+        width: 350px;
+    }
+    .greenBox {
+        width: 350px;
+        margin: 0;
+    }
+}
